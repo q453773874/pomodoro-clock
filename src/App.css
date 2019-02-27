@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+}
+
+.app-container {
+  margin: 300px auto;
+  font-weight: bold;
+  color: white;
+  width: 40%;
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.setting-control-container {
+  display: grid;
+  grid-template-areas: 
+  "break-label break-label break-label sess-label sess-label sess-label"
+  "break-dec break-len break-inc session-dec session-len session-inc";
+  grid-row-gap: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#break-label {
+  grid-area: break-label;
+}
+#break-decrement {
+  cursor: pointer;
+  grid-area: break-dec;
+  text-align: right;
+}
+#break-increment {
+  cursor: pointer;
+  grid-area: break-inc;
+  text-align: left;
+}
+#break-length {
+  grid-area: break-len;
+}
+#session-label {
+  grid-area: sess-label;
+}
+#session-decrement {
+  cursor: pointer;
+  grid-area: session-dec;
+  text-align: right;
+}
+#session-length {
+  grid-area: session-len;
+}
+#session-increment {
+  cursor: pointer;
+  grid-area: session-inc;
+  text-align: left;
+}
+
+/* clock */
+.clock-container-white {
+  font-size: 30px;
+  margin: 15px auto;
+  border: 7px solid #13353a;
+  border-radius: 40px 40px 40px 40px;
+  width: 50%;
+  color: white;
+}
+.clock-container-red {
+  font-size: 30px;
+  margin: 15px auto;
+  border: 7px solid #13353a;
+  border-radius: 40px 40px 40px 40px;
+  width: 50%;
+  color:red;
+}
+#time-left {
+  font-size: 2em;
+}
+
+.clock-control-container {
+  margin: 0 auto;
+  width: 10%;
+}
+.clock-control-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.clock-control-btns p {
+  cursor: pointer;
+  font-size: 20px;
+}
